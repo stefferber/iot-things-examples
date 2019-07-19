@@ -9,5 +9,6 @@ program
     })
     .command('bind [credentials]', 'integrate binding credentials')
     .command('things', 'access things service')
+    .command('auth', 'get your suiteAuth token')
     .parse(process.argv);
 
