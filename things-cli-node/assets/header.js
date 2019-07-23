@@ -1,6 +1,6 @@
 const chalk = require('chalk');
 
-const name = chalk.blue('Bosch IOT Things CLI');
+const name = chalk.red('Bosch IOT Suite CLI');
 
 const header = `
      ${name}
