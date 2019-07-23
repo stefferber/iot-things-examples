@@ -39,7 +39,7 @@ const getThings = (count, subscription, authentication) => {
         }
     ).then(res => {
         console.log(JSON.parse(res, null, 2));
-    }).catch(err => { throw(err)});
+    }).catch(err => { throw(err)} );
 
 
 };
