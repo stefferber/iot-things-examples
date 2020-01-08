@@ -37,6 +37,7 @@
         <select class="custom-select" id="inputGroupSelect01" @change="onChangePlatform($event)">
           <option value="1" @select="onChangePlatform($event)">Amazon Webservices (AWS)</option>
           <option value="2">Bosch IoT Cloud (BIC)</option>
+          <option value="3">Microsoft Azure (AZ)</option>
         </select>
       </div>
       <div class="input-group mb-3">
