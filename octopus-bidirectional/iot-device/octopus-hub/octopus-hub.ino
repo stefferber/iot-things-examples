@@ -39,6 +39,11 @@ unsigned int sensorUpdateRate = SENSOR_UPDATE_RATE_MS;
 void setup()
 {
   Serial.begin(SERIAL_BAUD);
+  while (!Serial)
+    ;
+  Serial.println("                             "); // print some spaces to let the Serial Monitor catch up
+  Serial.println();
+  
   Serial.println();   Serial.println();
   Serial.println("[settings.h]");
   Serial.print("SERIAL_BAUD           "); Serial.println(SERIAL_BAUD);
@@ -54,10 +59,6 @@ void setup()
   Serial.print("MQTT_BROKER           "); Serial.println(MQTT_BROKER );
   Serial.print("MQTT_PORT             "); Serial.println(MQTT_PORT);
       
-  while (!Serial)
-    ;
-
-  Serial.println("                             "); // print some spaces to let the Serial Monitor catch up
   Serial.println();
 
   Printer::printlnMsg("Reset reason", ESP.getResetReason());
