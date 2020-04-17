@@ -38,7 +38,22 @@ unsigned int sensorUpdateRate = SENSOR_UPDATE_RATE_MS;
 
 void setup()
 {
-  Serial.begin(115200);
+  Serial.begin(SERIAL_BAUD);
+  Serial.println();   Serial.println();
+  Serial.println("[settings.h]");
+  Serial.print("SERIAL_BAUD           "); Serial.println(SERIAL_BAUD);
+  Serial.print("WIFI_SSID             "); Serial.println(WIFI_SSID);
+  Serial.print("WIFI_PASSWORD         "); Serial.println(WIFI_PASSWORD);
+  Serial.print("THINGS_NAMESPACE      "); Serial.println(THINGS_NAMESPACE);
+  Serial.print("THING_NAME            "); Serial.println(THING_NAME);
+  Serial.print("HUB_TENANT            "); Serial.println(HUB_TENANT);
+  Serial.print("HUB_DEVICE_ID         "); Serial.println(HUB_DEVICE_ID);
+  Serial.print("HUB_DEVICE_AUTH_ID    "); Serial.println(HUB_DEVICE_AUTH_ID);
+  Serial.print("HUB_DEVICE_PASSWORD   "); Serial.println(HUB_DEVICE_PASSWORD);
+  Serial.print("SENSOR_UPDATE_RATE_MS "); Serial.println(SENSOR_UPDATE_RATE_MS);
+  Serial.print("MQTT_BROKER           "); Serial.println(MQTT_BROKER );
+  Serial.print("MQTT_PORT             "); Serial.println(MQTT_PORT);
+      
   while (!Serial)
     ;
 
