@@ -1,3 +1,5 @@
+#include <PubSubClient.h>
+
 /*
  * Bosch SI Example Code License Version 1.0, January 2016
  *
@@ -29,8 +31,12 @@
 #include <ESP8266WiFi.h>
 #include <WiFiClientSecure.h>
 #include <PubSubClient.h>
+//#include "/Users/Stefan/prog/Arduino/libraries/PubSubClient/src/PubSubClient.h"
 #include <ArduinoJson.h>
 #include "octopus.h"
+
+//#undef MQTT_MAX_PACKET_SIZE
+//#define MQTT_MAX_PACKET_SIZE 2048 
 
 #define HUB_COMMAND_CALLBACK_SIGNATURE void (*callback)(JsonObject&,String,String)
 

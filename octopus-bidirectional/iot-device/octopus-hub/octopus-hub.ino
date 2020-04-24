@@ -1,3 +1,5 @@
+#include <PubSubClient.h>
+
 /*
  * Bosch SI Example Code License Version 1.0, January 2016
  *
@@ -58,6 +60,7 @@ void setup()
   Serial.print("SENSOR_UPDATE_RATE_MS "); Serial.println(SENSOR_UPDATE_RATE_MS);
   Serial.print("MQTT_BROKER           "); Serial.println(MQTT_BROKER );
   Serial.print("MQTT_PORT             "); Serial.println(MQTT_PORT);
+  Serial.print("MQTT_MAX_PACKET_SIZE  "); Serial.println(MQTT_MAX_PACKET_SIZE);
       
   Serial.println();
 
